@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DavidCode - CRUD Usuarios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>DavidCode - CRUD Usuarios</h1>
+
+    <form id="form-usuario">
+      <input type="hidden" id="usuario-id" />
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Guardar Usuario</button>
+      <button type="button" id="cancelar" class="hidden">Cancelar</button>
+    </form>
+
+    <hr />
+
+    <h2>Lista de Usuarios</h2>
+    <table id="tabla-usuarios">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se insertarán usuarios -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
